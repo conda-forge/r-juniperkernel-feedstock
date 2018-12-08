@@ -14,9 +14,9 @@ Summary: Provides a full implementation of the 'Jupyter' <http://jupyter.org/> m
 Current build status
 ====================
 
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-juniperkernel-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-juniperkernel-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/r-juniperkernel-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-juniperkernel-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-juniperkernel-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-juniperkernel-feedstock/branch/master)
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
 
 Current release info
 ====================
