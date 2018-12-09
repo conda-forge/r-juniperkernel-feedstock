@@ -2,6 +2,13 @@
 if [[ $target_platform =~ linux.* ]] || [[ $target_platform == win-32 ]] || [[ $target_platform == win-64 ]] || [[ $target_platform == osx-64 ]]; then
   export DISABLE_AUTOBREW=1
   $R CMD INSTALL --build .
+
+  # Installs kernelspec with absolute path and R version specific kernel naming:
+  # $R -e 'JuniperKernel::installJuniper(prefix = Sys.getenv("PREFIX"))'
+
+  mkdir -p "$PREFIX/share/jupyter/kernels/juniper"
+  cp -v inst/extdata/logo*.png "$PREFIX/share/jupyter/kernels/juniper/"
+  cp -v "$RECIPE_DIR/kernel.json" "$PREFIX/share/jupyter/kernels/juniper/"
 else
   mkdir -p $PREFIX/lib/R/library/JuniperKernel
   mv * $PREFIX/lib/R/library/JuniperKernel
