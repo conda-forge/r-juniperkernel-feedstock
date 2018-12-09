@@ -1,0 +1,5 @@
+{
+  "argv": ["R", "--slave", "-e", "JuniperKernel::bootKernel()", "--args", "{connection_file}"],
+  "display_name": "R (Juniper)",
+  "language": "R"
+}
