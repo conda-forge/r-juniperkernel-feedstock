@@ -14,7 +14,8 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  skip: True  # [c_compiler == 'toolchain_c' and linux]
+  number: 1002
   rpaths:
     - lib/R/lib/
     - lib/
