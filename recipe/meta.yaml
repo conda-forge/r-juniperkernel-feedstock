@@ -15,7 +15,7 @@ source:
 build:
   merge_build_host: True  # [win]
   skip: True  # [c_compiler == 'toolchain_c' and linux]
-  number: 1002
+  number: 1003
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,7 +24,8 @@ requirements:
   build:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('cxx') }}      # [not win]
-    - {{native}}toolchain        # [win]
+    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ compiler('m2w64_cxx') }}        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}sed               # [win]
     - {{posix}}grep              # [win]
@@ -76,6 +77,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - johanneskoester
     - bgruening
     - daler
