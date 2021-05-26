@@ -60,7 +60,7 @@ test:
 
 about:
   home: https://github.com/JuniperKernel/JuniperKernel
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Provides a full implementation of the 'Jupyter' <http://jupyter.org/> messaging protocol
     in C++ by leveraging 'Rcpp' and 'Xeus' <https://github.com/QuantStack/xeus>. 'Jupyter'
     supplies an interactive computing environment and a messaging protocol defined over
@@ -77,9 +77,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
